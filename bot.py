@@ -42,7 +42,7 @@ async def warn(ctx, member : discord.Member,*, reason = 'Причина не у�
     if member == ctx.author:
       await ctx.reply(embed = warnError)
       return
-    if member == bot.user.mention:
+    if member == bot.user:
       await ctx.reply(embed = warnYaObidelsya)
 
     else:
